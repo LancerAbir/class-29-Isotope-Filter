@@ -1,0 +1,140 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+alignright {
+    float: right;
+    margin-left: 15px;
+}
+aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], textarea {
+    border: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+input[type="submit"], button[type="submit"] {
+    border: medium none;
+    color: #fff;
+    margin: 0;
+    padding: 15px 30px;
+    width: auto;
+}
+a:focus, input:focus, textarea:focus, button:focus {
+    outline: 0 solid
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}    
+body {
+    
+}
+a:hover {
+    text-decoration: none;
+}
+.single-projects {
+    background-image: url(img/bg-01.jpg);
+    background-color: #ddd;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.projects-bg-02 {background-image: url(img/bg-02.jpg)}
+.projects-bg-03 {background-image: url(img/bg-03.jpg)}
+.projects-bg-04 {background-image: url(img/bg-04.jpg)}
+.projects-bg-05 {background-image: url(img/bg-05.jpg)}
+.projects-bg-06 {background-image: url(img/bg-06.jpg)}
+.projects-bg-07 {background-image: url(img/bg-07.jpg)}
+.projects-bg-08 {background-image: url(img/bg-08.jpg)}
+.projects-bg-09 {background-image: url(img/bg-09.jpg)}
+
+
+.section-padding {
+    padding: 80px 0;
+}
+.projects-title li.active {color: #09dcd4;}
+ul.projects-title {
+    list-style: outside none none;
+    margin: 0 0 50px;
+    padding: 0;
+}
+ul.projects-title li {
+    display: inline-block;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.row.projects-list .col-md-4 {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+.row.projects-list {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+.row .projects-list .col-md-4:nth-child(2) .single-projects,
+.row .projects-list .col-md-4:nth-child(4) .single-projects,
+.row .projects-list .col-md-4:nth-child(6) .single-projects {
+    height: 515px;
+}
+.projects-hover {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.projects-hover *::after {
+    background-color: #333;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.projects-hover a i.fa {
+    color: #09dcd4;
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    top: 24px;
+}
+.projects-hover h4 {
+    bottom: 30px;
+    color: #fff;
+    left: 30px;
+    position: absolute;
+    text-transform: uppercase;
+    margin: 0;
+}
+.projects-hover h4 span {
+    color: #09dcd4;
+    display: block;
+    font-size: 80%;
+    margin-top: 8px;
+    text-transform: none;
+}
+.single-projects:hover .projects-hover {
+    opacity: 1;
+}
+
+
